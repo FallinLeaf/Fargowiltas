@@ -144,8 +144,11 @@ namespace Fargowiltas
             HomeKey = null;
             RodKey = null;
             CustomKey = null;
+            StatKey = null;
             mods = null;
             ModLoaded = null;
+
+            Instance = null;
         }
 
         public override void PostSetupContent()
