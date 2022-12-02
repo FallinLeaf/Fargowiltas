@@ -88,7 +88,6 @@ namespace Fargowiltas
             RodKey = KeybindLoader.RegisterKeybind(this, GetTranslation("Keybind.Rod"), "E");
             CustomKey = KeybindLoader.RegisterKeybind(this, GetTranslation("Keybind.Custom"), "K");
             StatKey = KeybindLoader.RegisterKeybind(this, GetTranslation("Keybind.Stat"), "M");
-            //update this when tml updated
 
             _userInterfaceManager = new UIManager();
             _userInterfaceManager.LoadUI();

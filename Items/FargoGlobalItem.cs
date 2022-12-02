@@ -137,7 +137,7 @@ namespace Fargowiltas.Items
                             || item.type == ItemID.BewitchingTable
                             || item.type == ItemID.SliceOfCake)
                     {
-                        line = new TooltipLine(Mod, "TooltipUnlim", Language.GetTextValue("Mods.Fargowiltas.ItemTooltip.Unlimited15"));
+                        line = new TooltipLine(Mod, "TooltipUnlim", Language.GetTextValue("Mods.Fargowiltas.ItemTooltip.Unlimited3"));
                         tooltips.Add(line);
                     }
                 }
@@ -162,26 +162,6 @@ namespace Fargowiltas.Items
                     line = new TooltipLine(Mod, "TooltipSquirrel",
                     $"[i:{CaughtNPCs.CaughtNPCItem.CaughtTownies[NPCType<Squirrel>()]}] [c/AAAAAA:{text}]");
                     tooltips.Add(line);
-                }
-            }
-
-            if(item.type == ItemType<Summons.MapViewer>())
-            {
-                for (int i = 0; i < tooltips.Count; i++)
-                {
-                    if (tooltips[i].Text == "Reveals the whole map")
-                    {
-                        tooltips.Remove(tooltips[i]);
-                        if (Main.netMode != NetmodeID.MultiplayerClient)
-                        {
-                            tooltips.Insert(i, new TooltipLine(Mod, "MapViewerTooltip", Language.GetTextValue("Mods.Fargowiltas.ItemTooltip.MapSingle")));
-                        }
-                        else
-                        {
-                            tooltips.Insert(i, new TooltipLine(Mod, "MapViewerTooltip", Language.GetTextValue("Mods.Fargowiltas.ItemTooltip.MapMulti")));
-                        }
-                    }
-                        
                 }
             }
         }
@@ -297,7 +277,7 @@ namespace Fargowiltas.Items
                     player.GetModPlayer<FargoPlayer>().luckPotionBoost = Math.Max(player.GetModPlayer<FargoPlayer>().luckPotionBoost, 0.2f);
             }
 
-            if (item.stack >= 15)
+            if (item.stack >= 3)
             {
                 if (item.type == ItemID.SharpeningStation)
                     player.AddBuff(BuffID.Sharpened, 2);
