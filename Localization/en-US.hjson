@@ -114,16 +114,20 @@ Mods: {
 			NPCSales: "[i:267] Extra Town NPC sales"
 			SaferBoundNPCs: "[i:1274] Rescuable Town NPCs take no contact damage"
 
+			SeasonSelectionNormal: Normal
+			SeasonSelectionAlwaysOn: Always On
+			SeasonSelectionAlwaysOff: Always Off
+
 			SeasonsHeader: Seasons
-			Halloween: "[i:1774] Halloween Season Active"
-			Christmas: "[i:1869] Christmas Season Active"
+			Halloween: "[i:1774] Halloween Season"
+			Christmas: "[i:1869] Christmas Season"
 
 			SeedsHeader: Secret World Seeds
-			DrunkWorld: "[i:353] Drunk World Active"
-			BeeWorld: "[i:1133] Bee World Active"
-			WorthyWorld: "[i:2107] For the Worthy World Active"
-			CelebrationWorld: "[i:3732] Celebration World Active"
-			ConstantWorld: "[i:5109] Constant World Active"
+			DrunkWorld: "[i:353] Drunk World"
+			BeeWorld: "[i:1133] Bee World"
+			WorthyWorld: "[i:2107] For the Worthy World"
+			CelebrationWorld: "[i:3732] Celebration World"
+			ConstantWorld: "[i:5109] Constant World"
 
 			UnlimitedHeader: Unlimited
 			UnlimitedAmmo: "[i:771] Unlimited Ammo at 3996+ in Hardmode"
@@ -214,8 +218,30 @@ Mods: {
 			OverloadPumpkinMoon2: The Pumpkin Moon is rising...
 			OverloadPumpkinMoonWave: "Wave: 15: Everything"
 
-			SwarmKilled: "Killed: "
-			SwarmTotal: "Total: "
+			Swarms: {
+				Abeemination2: "A deafening buzz pierces through you!"
+				BetsyEgg: "The real Old One's Army is attacking!"
+				GoreySpine: "You feel dumb among so many brains!"
+				CultistSummon: "Defeaning chants fill your ears!"
+				ForbiddenTome: "You feel like you're in a library!"
+				DeerThing2: "The Constant takes over!"
+				MechWorm: "The planet trembles from the core!"
+				PrismaticPrimrose: "Bullet heaven is descending!"
+				SuspiciousEye: "Countless eyes pierce the veil staring in your direction!"
+				TruffleWorm2: "The ocean swells with ferocious pigs!"
+				LihzahrdPowerCell2: "Ancient automatons come crashing down!"
+				CelestialSigil2: "The wind whispers of death's approach!"
+				PlanterasFruit: "The jungle beats as one!"
+				MechSkull: "A sickly chill envelops the world!"
+				JellyCrystal: "Welcome to the truer slime rain!"
+				SuspiciousSkull: "A great clammering of bones rises from the dungeon!"
+				SlimyCrown: "Welcome to the true slime rain!"
+				MechEye: "A legion of glowing iris sing a dreadful song!"
+				FleshyDoll: "A fortress of flesh arises from the depths!"
+				WormyFood: "The ground shifts with formulated precision!"
+			}
+			SwarmKilled: "Killed: {0}"
+			SwarmTotal: "Total: {0}"
 			SwarmDefeated: The swarm has been defeated!
 
 			ItemUnlocked: "A new item has been unlocked in {0}'s shop!"
@@ -231,6 +257,11 @@ Mods: {
 		}
 
 		ItemTooltip: {
+			MapSingle: Reveals the whole map
+			MapMulti: Reveals an area of the map around you
+		}
+
+		ExpandedTooltips: {
 			FountainTooltip: "[i:909] [c/AAAAAA:Forces surrounding biome state to {0} upon activation]"
 			Ocean: Ocean
 			Desert: Desert
@@ -250,8 +281,10 @@ Mods: {
 			Unlimited3: "[i:87] [c/AAAAAA:Unlimited buff at 3 stack in inventory, Piggy Bank, or Void Bag]"
 			PiggyBankAcc: "[i:87] [c/AAAAAA:Works from Piggy Bank and Void Bag]"
 
-			MapSingle: Reveals the whole map
-			MapMulti: Reveals an area of the map around you
+			SoldBySquirrel: "Sold By Squirrel"
+			SomeMaterialsSold: "Some Materials Sold"
+			CraftableMaterialsSold: "Craftable Materials Sold"
+			SoldAtThirtyStack: "Sold At Thirty Stack"
 		}
 
 		MapObject: {

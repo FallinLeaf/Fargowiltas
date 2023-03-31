@@ -274,14 +274,14 @@ namespace Fargowiltas.NPCs
 
             if (Main.hardMode)
             {
-                dialogue.Add("Mods.Fargowiltas.Dialogues.Devi.HardMode");
+                dialogue.Add(Language.GetTextValue("Mods.Fargowiltas.Dialogues.Devi.HardMode"));
             }
 
             int mutant = NPC.FindFirstNPC(NPCType<Mutant>());
             if (mutant != -1)
             {
                 dialogue.Add(Language.GetTextValue("Mods.Fargowiltas.Dialogues.Devi.Mutant1", Main.npc[mutant].GivenName));
-                dialogue.Add(Language.GetTextValue("Mods.Fargowiltas.Dialogues.Devi.Mutant3", Main.npc[mutant].GivenName));
+                dialogue.Add(Language.GetTextValue("Mods.Fargowiltas.Dialogues.Devi.Mutant2", Main.npc[mutant].GivenName));
             }
 
             int lumberjack = NPC.FindFirstNPC(NPCType<LumberJack>());

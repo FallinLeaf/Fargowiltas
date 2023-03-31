@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Terraria;
+using Terraria.Audio;
 using Terraria.Chat;
 using Terraria.ID;
 using Terraria.Localization;
@@ -46,8 +47,7 @@ namespace Fargowiltas
 
             if (update)
             {
-                if (IsChinese)
-                    seller = seller.Replace("Deviantt", "戴薇安").Replace("Abominationn", "憎恶");
+                seller = Language.GetTextValue($"Mods.Fargowiltas.NPCName.{seller}");
                 string text = Language.GetTextValue("Mods.Fargowiltas.MessageInfo.ItemUnlocked", seller);
                 if (Main.netMode == NetmodeID.SinglePlayer)
                 {
@@ -83,8 +83,30 @@ namespace Fargowiltas
 
         public static void PrintText(string text, int r, int g, int b) => PrintText(text, new Color(r, g, b));
 
+        public static void SpawnBossNetcoded(Player player, int bossType)
+        {
+            if (player.whoAmI == Main.myPlayer)
+            {
+                // If the player using the item is the client
+                // (explicitely excluded serverside here)
+                SoundEngine.PlaySound(SoundID.Roar, player.position);
+
+                if (Main.netMode != NetmodeID.MultiplayerClient)
+                {
+                    // If the player is not in multiplayer, spawn directly
+                    NPC.SpawnOnPlayer(player.whoAmI, bossType);
+                }
+                else
+                {
+                    // If the player is in multiplayer, request a spawn
+                    // This will only work if NPCID.Sets.MPAllowedEnemies[type] is true, set in NPC code
+                    NetMessage.SendData(MessageID.SpawnBoss, number: player.whoAmI, number2: bossType);
+                }
+            }
+        }
+
         public static bool IsChinese => Language.ActiveCulture.LegacyId == (int)GameCulture.CultureName.Chinese;
 
-        public static string GetTranslation(string key) => LocalizationLoader.GetOrCreateTranslation($"Mods.Fargowiltas.{key}").GetTranslation(Language.ActiveCulture);
+        public static string GetTranslation(string key, bool fargoKey = true) => LocalizationLoader.GetOrCreateTranslation(fargoKey ? $"Mods.Fargowiltas.{key}" : key).GetTranslation(Language.ActiveCulture);
     }
 }

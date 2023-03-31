@@ -16,6 +16,7 @@ namespace Fargowiltas.Items.Summons.Mutant
         {
             DisplayName.SetDefault("Death Bringer Fairy");
             Tooltip.SetDefault("Summons all pre-hardmode bosses" +
+                               "\nCan only be used at night" +
                                "\nCertain bosses will only spawn if you're in their specific biome");
             Terraria.GameContent.Creative.CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 3;
         }
@@ -46,7 +47,7 @@ namespace Fargowiltas.Items.Summons.Mutant
 
             if (Main.netMode == NetmodeID.Server)
             {
-                ChatHelper.BroadcastChatMessage(NetworkText.FromLiteral(Language.GetTextValue("Mods.Fargowiltas.MessageInfo.DeathBringerFairy")), new Color(175, 75, 255));
+                ChatHelper.BroadcastChatMessage(NetworkText.FromKey("Mods.Fargowiltas.MessageInfo.DeathBringerFairy"), new Color(175, 75, 255));
             }
             else
             {
