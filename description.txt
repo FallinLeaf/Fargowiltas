@@ -1,6 +1,9 @@
 This is a Quality of life mod that adds the Mutant town NPC who sells boss summons of nearly every mod
 There are several other items such as infinite ammos, craftable instant builds for common world infrastructure like skybridges, obsidian underworld bridges, hellevators, unlimited potions, increased spawn rates toggle item, and more!
 
+NEW UPDATE - V 2.8.9
+-Added Purity Totem
+
 NEW UPDATE - V 2.8.8
 -Adjusted boss values to match Boss Checklist again
 -Fixed Renewals sometimes deleting blocks when used in unloaded chunks in multiplayer
@@ -12,7 +15,7 @@ NEW UPDATE - V 2.8.8
 -Deathbringer Fairy and Ancient Seal specify they must be used at night
 
 NEW UPDATE - V 2.8.7
--Added an additional option to holiday and seed settings. It can be set to Normal which means it behaves with no modifications.
+-Added an additional option to holiday and seed settings. It can be set to Normal which means it behaves with no modifications. This fixes some issues with seeds world gen and other mod holiday items 
 -Replaced King Slime Mask with Duke Fishron Mask in Mutant Body vanity recipe
 -Altar Exterminator is now crafted at any Anvil
 -Added a Hallowed Bar to the Tattered Bee Wing, Fire Feather, and Unholy Trident recipes
@@ -46,6 +49,9 @@ NEW UPDATE - V 2.8.6
 这是一个提升生存质量的MOD，添加了能卖几乎所有MOD中的Boss召唤物的突变体NPC。
 这个MOD中也有很多其他东西，比如无限的弹药，可制造的速建建筑，比如世界平台、黑曜石平台、地狱直通车，还有无限的药水，增加刷怪率的物品等等！
 
+- V 2.8.9 更新 -
+-添加了纯净图腾
+
 - V 2.8.8 更新 -
 -调整了Boss权重，再次使其适配Boss列表
 -修复了环境领域在多人模式未加载的区块中使用有时会删除方块
@@ -56,7 +62,7 @@ NEW UPDATE - V 2.8.6
 -告死精灵和古代符章注明只能在晚上使用
 
 - V 2.8.7 更新 -
--节日和种子配置添加了一个额外的选项。它可以被设定为正常，意味着对其没有任何改动。
+-节日和种子配置添加了一个额外的选项。它可以被设定为正常，意味着对其没有任何改动。此条修复了一些彩蛋种子世界生成和其他模组的节日物品的相关问题。
 -将突变躯体时装配方中的史莱姆王面具替换为猪龙鱼公爵面具
 -祭坛终结者现在在任意砧处合成
 -在褴褛蜜蜂之翼、火之羽、邪恶三叉戟的配方中添加了一个神圣锭
